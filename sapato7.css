@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #CCFF33;
+    border-radius: 6px;
+    border: 3px solid #000000;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #AACC22;
+}
+
+
+html {
+    scrollbar-color: #CCFF33 #000000;
+    scrollbar-width: auto;
+}
+
+#cabecalho {
+    display: grid;
+    grid-template-columns: 280px auto auto auto auto 150px 150px;
+    align-items: center;
+    column-gap: 100px;
+
+    background-color: black;
+    height: 100px;
+    width: auto;
+    border: solid;
+    border-bottom-color: grey;
+    border-width: 1px;
+}
+
+.itemcab {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+}
+
+#logo {
+    margin-left: 50px;
+}
+
+
+
+
+.link-sacola,
+.link-sacola .shopping_bag {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 80px;
+    transition: color 0.3s ease;
+}
+
+
+.link-sacola:hover,
+.link-sacola:hover .shopping_bag {
+    color: #CCFF33;
+}
+
+
+
+.link {
+    text-decoration: none;
+    color: #ffffffb3;
+}
+
+
+.link:hover {
+    color: #CCFF33;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+#pesquisa {
+    background-color: black;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    border-width: 1px;
+    margin-left: -90px;
+    color: #ffffffb3;
+    font-family: "Barlow", sans-serif;
+}
+
+#conteudo {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 150vh;
+    background-color: #000000;
+}
+
+#voltar {
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    margin-left: 200px;
+
+
+}
+
+#foto {
+    height: 70vh;
+    width: 100vh;
+    margin-left: 200px;
+    margin-top: 40px;
+    background-image: url(purple_neon_sneaker_4_3.png);
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+
+
+#categoria {
+    margin-top: 60px;
+    font-family: "Barlow", sans-serif;
+    color: #ffffffb3;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-right: 600px;
+}
+
+#nome {
+    color: white;
+    margin-top: 60px;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+
+}
+
+#preco {
+    color: white;
+    margin-top: 60px;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+#cortado {
+    text-decoration: line-through;
+    color: grey;
+    margin-top: 60px;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top: 30px;
+}
+
+#valores {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#tamanho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#pequeno {
+    color: #a6a0a0b3;
+    font-family: "Barlow", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.botao {
+    padding: 30 35px;
+    border: 1px solid #444;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+.botao:hover {
+    border: solid 5px white;
+}
+
+.botao:focus {
+    border-color: #fff;
+    background-color: #ffffff;
+    color: black;
+
+}
+
+#corpequena {
+    color: #a6a0a0b3;
+    font-family: "Barlow", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#bloco {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.botaocor {
+    padding: 20px 50px;
+    border: 1px solid #444;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+.botaocor:hover {
+    border: solid 5px white;
+}
+
+.botaocor:focus {
+    background-color: white;
+    color: black;
+}
+
+#roxo:focus {
+    background-color: #BF00FF;
+    border: solid 3px white;
+}
+
+#roxo:focus {
+    background-color: #BF00FF;
+    border: solid 3px white;
+}
+
+#azul:focus {
+    background-color: #00FFFF;
+    border: solid 3px white;
+}
+
+#comprar {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-top: 80px;
+}
+
+.financeiro {
+    padding: 2.2vh 35vh;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+#comprar1 {
+    padding: 2.2vh 35vh;
+    background-color: #000000;
+    border: solid 1px white;
+    color: white;
+}
+
+#comprar1:hover {
+    background-color: #CCFF33;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease-in-out;
+    border: solid 1px white;
+}
+
+#carrinho {
+    padding: 2.2vh 33vh;
+}
+
+#carrinho:hover {
+    background-color: #CCFF33;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease-in-out;
+    border: solid 1px white;
+}
+
+button .texto-depois {
+    display: none;
+}
+
+
+#comprar1:focus .texto-antes {
+    display: none;
+}
+
+#comprar1:focus .texto-depois,
+#comprar1 {
+    display: inline;
+    width: 650px;
+}
+
+#rodape {
+    display: grid;
+    grid-template-rows: auto auto;
+    height: 50vh;
+    background-color: #000000;
+    color: white;
+    border-top: solid 1px grey;
+}
+
+#conteudorodape1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 50px;
+    letter-spacing: 2px;
+    margin-left: 150px;
+
+
+
+}
+
+.top {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-family: "Barlow", sans-serif;
+    list-style: none;
+}
+
+#navegacao {
+    padding-left: 50px;
+}
+
+#cont2 {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+#rodapelogo {
+    margin-left: 180px;
+}
+
+#st8direito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    padding-top: 50px;
+    margin-left: 900px;
+    font-size: 20px;
+}
+
+#st8direito:hover {
+    color: #CCFF33;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
